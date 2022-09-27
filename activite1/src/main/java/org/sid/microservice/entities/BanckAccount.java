@@ -6,10 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.sid.microservice.enums.AccountType;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Data
@@ -25,5 +22,7 @@ public class BanckAccount {
     @Enumerated(EnumType.STRING)
     private AccountType type;
     private  String devise;
+    @ManyToOne
+    private Custmer custmer;
 
 }

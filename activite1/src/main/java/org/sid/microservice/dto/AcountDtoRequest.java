@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.sid.microservice.entities.BanckAccount;
+import org.sid.microservice.entities.Custmer;
 import org.sid.microservice.enums.AccountType;
 
 import javax.persistence.EnumType;
@@ -21,5 +23,6 @@ public class AcountDtoRequest {
     @Enumerated(EnumType.STRING)
     private AccountType type;
     private  String devise;
+    private Custmer custmer;
 
 }

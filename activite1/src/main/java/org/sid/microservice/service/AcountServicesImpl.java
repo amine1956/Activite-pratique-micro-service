@@ -23,12 +23,13 @@ public class AcountServicesImpl implements AcountServices {
     @Autowired
     private BanckAccocuntReposetorie banckAccocuntReposetorie;
 
-    private MapperAcount mapperAcount;
+     private MapperAcount mapperAcount;
 
     @Override
     public AcountDtoResponse addAccount(AcountDtoRequest acountDtoInput) {
         acountDtoInput.setId(UUID.randomUUID().toString());
         System.out.println(acountDtoInput.toString());
+
         return mapperAcount.FromeBanckAccountToAccountOutputDTO(banckAccocuntReposetorie.save(mapperAcount.fromAccountInputDTOToAccountEntity(acountDtoInput)));
 
     }
@@ -67,7 +68,9 @@ public class AcountServicesImpl implements AcountServices {
     @Override
     public List<AcountDtoResponse> getAllAcount() {
         List<BanckAccount> listeAccount = banckAccocuntReposetorie.findAll();
-        List<AcountDtoResponse> acountDtoOutputs = listeAccount.stream().map(account -> mapperAcount.FromeBanckAccountToAccountOutputDTO(account)).collect(Collectors.toList());
+        List<AcountDtoResponse> acountDtoOutputs = listeAccount.stream().map(account -> mapperAcount
+                .FromeBanckAccountToAccountOutputDTO(account))
+                .collect(Collectors.toList());
         return acountDtoOutputs;
     }
 }

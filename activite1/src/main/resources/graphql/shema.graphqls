@@ -1,0 +1,33 @@
+type Query {
+    getAllAcountes:[AcountDtoResponse],
+    getAccountf(id:String): AcountDtoResponse,
+    getAllCustmer:[CustmerResponseDTO],
+
+}
+type Mutation {
+    addAccounte(acountDtoInput: AcountDtoRequest): AcountDtoResponse
+    deleteAccounte(id:String): String
+    updateAccounte(id:String,acountDtoInput: AcountDtoRequest): AcountDtoResponse
+}
+
+
+input AcountDtoRequest {
+    balance:Float
+
+}
+type AcountDtoResponse {
+    id:String
+    balance:Float
+    banckAccounts:CustmerResponseDTO
+}
+type CustmerResponseDTO {
+    id:ID
+    name:String
+    email:String
+    banckAccount:[AcountDtoResponse]
+}
+
+
+
+
+
