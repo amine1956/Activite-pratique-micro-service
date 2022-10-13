@@ -1,0 +1,12 @@
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: route1
+#          uri: http://localhost:8086
+#          predicates:
+#            - Path=/customers/**
+#    discovery:
+#      enabled: false
+#server:
+#  port: 8080
