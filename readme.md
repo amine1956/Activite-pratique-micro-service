@@ -22,7 +22,7 @@
   <tr>
    <td>2</td>
    <td> Spring Cloud premier Tp	</td>
-   <td><a href="https://github.com/amine1956/Activite-pratique-micro-service/tree/main/activite1">🔗</a></td>
+   <td><a href="https://github.com/amine1956/Activite-pratique-micro-service/tree/main/activite2">🔗</a></td>
  </tr>
 <tr>
 </table>
