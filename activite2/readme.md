@@ -1,3 +1,5 @@
+# énoncé de tp
+![image](https://user-images.githubusercontent.com/73759527/198842479-4c148e8a-a47b-4ba6-90f3-90a59a3fb161.png)
 #  customer service
 ## fichier application.properties
 ![image](https://user-images.githubusercontent.com/73759527/198827012-2acac0d3-1e01-4c00-9369-ac30d47e7705.png)
@@ -76,15 +78,8 @@
 ![image](https://user-images.githubusercontent.com/73759527/198828462-1688f1f7-5c6e-47d3-b128-0b9980e649dc.png)
 ![image](https://user-images.githubusercontent.com/73759527/198828516-0a85e251-da7c-40b0-b7fc-19d6017f6ac3.png)
 
-
-
-
-
-
-
-
-
-<h1>CustomerService:</h1>
+# containerisation docker kubernetes
+<h2>CustomerService:</h2>
 
 ![image](https://user-images.githubusercontent.com/73759527/198837498-44643077-43d7-411d-907d-4d9bf8bdbb50.png)
 
