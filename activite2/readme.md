@@ -78,7 +78,15 @@
 ![image](https://user-images.githubusercontent.com/73759527/198828462-1688f1f7-5c6e-47d3-b128-0b9980e649dc.png)
 ![image](https://user-images.githubusercontent.com/73759527/198828516-0a85e251-da7c-40b0-b7fc-19d6017f6ac3.png)
 
-# containerisation docker kubernetes
+# containerisation docker engine  kubernetes
+
+### la premiere étape aprés la realisation des deffrents services c'est la genrartion des JAR:
+
+![image](https://user-images.githubusercontent.com/73759527/198842899-f3d0ec02-542a-4b31-a5e6-b57d927ad6e7.png)
+### la creation d'un fichier dockerfile pour chaque microservice 
+
+![image](https://user-images.githubusercontent.com/73759527/198842973-b9648725-905e-43bd-9e3e-2aed8546ab80.png)
+
 <h2>CustomerService:</h2>
 
 ![image](https://user-images.githubusercontent.com/73759527/198837498-44643077-43d7-411d-907d-4d9bf8bdbb50.png)
