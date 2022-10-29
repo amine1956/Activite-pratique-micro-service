@@ -24,7 +24,15 @@
    <td> Spring Cloud premier Tp	</td>
    <td><a href="https://github.com/amine1956/Activite-pratique-micro-service/tree/main/activite2">🔗</a></td>
  </tr>
+
+ 
+  <tr>
+   <td>3</td>
+   <td> Activité Pratique N° 3 : Web services SOAP, WSDL, UDDI avec JAXWS	</td>
+   <td><a href="https://github.com/amine1956/Activite-pratique-micro-service/tree/main/activite3">🔗</a></td>
+ </tr>
 <tr>
+
 </table>
 
 </body>
