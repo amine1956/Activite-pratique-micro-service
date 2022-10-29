@@ -24,13 +24,13 @@ import jakarta.xml.bind.annotation.XmlRegistry;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Compt_QNAME = new QName("http://ws.example.org/", "compt");
-    private final static QName _ConversionEuroToDh_QNAME = new QName("http://ws.example.org/", "conversionEuroToDh");
-    private final static QName _ConversionEuroToDhResponse_QNAME = new QName("http://ws.example.org/", "conversionEuroToDhResponse");
+    private final static QName _Compt_QNAME = new QName("http://ws.example.org/", "Compt");
+    private final static QName _Convert_QNAME = new QName("http://ws.example.org/", "Convert");
+    private final static QName _ConvertResponse_QNAME = new QName("http://ws.example.org/", "ConvertResponse");
     private final static QName _GetCompt_QNAME = new QName("http://ws.example.org/", "getCompt");
     private final static QName _GetComptResponse_QNAME = new QName("http://ws.example.org/", "getComptResponse");
-    private final static QName _GetCompts_QNAME = new QName("http://ws.example.org/", "getCompts");
-    private final static QName _GetComptsResponse_QNAME = new QName("http://ws.example.org/", "getComptsResponse");
+    private final static QName _ListComptes_QNAME = new QName("http://ws.example.org/", "listComptes");
+    private final static QName _ListComptesResponse_QNAME = new QName("http://ws.example.org/", "listComptesResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: proxy
@@ -50,23 +50,23 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ConversionEuroToDh }
+     * Create an instance of {@link Convert }
      * 
      * @return
-     *     the new instance of {@link ConversionEuroToDh }
+     *     the new instance of {@link Convert }
      */
-    public ConversionEuroToDh createConversionEuroToDh() {
-        return new ConversionEuroToDh();
+    public Convert createConvert() {
+        return new Convert();
     }
 
     /**
-     * Create an instance of {@link ConversionEuroToDhResponse }
+     * Create an instance of {@link ConvertResponse }
      * 
      * @return
-     *     the new instance of {@link ConversionEuroToDhResponse }
+     *     the new instance of {@link ConvertResponse }
      */
-    public ConversionEuroToDhResponse createConversionEuroToDhResponse() {
-        return new ConversionEuroToDhResponse();
+    public ConvertResponse createConvertResponse() {
+        return new ConvertResponse();
     }
 
     /**
@@ -90,23 +90,23 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetCompts }
+     * Create an instance of {@link ListComptes }
      * 
      * @return
-     *     the new instance of {@link GetCompts }
+     *     the new instance of {@link ListComptes }
      */
-    public GetCompts createGetCompts() {
-        return new GetCompts();
+    public ListComptes createListComptes() {
+        return new ListComptes();
     }
 
     /**
-     * Create an instance of {@link GetComptsResponse }
+     * Create an instance of {@link ListComptesResponse }
      * 
      * @return
-     *     the new instance of {@link GetComptsResponse }
+     *     the new instance of {@link ListComptesResponse }
      */
-    public GetComptsResponse createGetComptsResponse() {
-        return new GetComptsResponse();
+    public ListComptesResponse createListComptesResponse() {
+        return new ListComptesResponse();
     }
 
     /**
@@ -117,35 +117,35 @@ public class ObjectFactory {
      * @return
      *     the new instance of {@link JAXBElement }{@code <}{@link Compt }{@code >}
      */
-    @XmlElementDecl(namespace = "http://ws.example.org/", name = "compt")
+    @XmlElementDecl(namespace = "http://ws.example.org/", name = "Compt")
     public JAXBElement<Compt> createCompt(Compt value) {
         return new JAXBElement<>(_Compt_QNAME, Compt.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ConversionEuroToDh }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link Convert }{@code >}
      * 
      * @param value
      *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link ConversionEuroToDh }{@code >}
+     *     the new instance of {@link JAXBElement }{@code <}{@link Convert }{@code >}
      */
-    @XmlElementDecl(namespace = "http://ws.example.org/", name = "conversionEuroToDh")
-    public JAXBElement<ConversionEuroToDh> createConversionEuroToDh(ConversionEuroToDh value) {
-        return new JAXBElement<>(_ConversionEuroToDh_QNAME, ConversionEuroToDh.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.example.org/", name = "Convert")
+    public JAXBElement<Convert> createConvert(Convert value) {
+        return new JAXBElement<>(_Convert_QNAME, Convert.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ConversionEuroToDhResponse }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ConvertResponse }{@code >}
      * 
      * @param value
      *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link ConversionEuroToDhResponse }{@code >}
+     *     the new instance of {@link JAXBElement }{@code <}{@link ConvertResponse }{@code >}
      */
-    @XmlElementDecl(namespace = "http://ws.example.org/", name = "conversionEuroToDhResponse")
-    public JAXBElement<ConversionEuroToDhResponse> createConversionEuroToDhResponse(ConversionEuroToDhResponse value) {
-        return new JAXBElement<>(_ConversionEuroToDhResponse_QNAME, ConversionEuroToDhResponse.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.example.org/", name = "ConvertResponse")
+    public JAXBElement<ConvertResponse> createConvertResponse(ConvertResponse value) {
+        return new JAXBElement<>(_ConvertResponse_QNAME, ConvertResponse.class, null, value);
     }
 
     /**
@@ -175,29 +175,29 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetCompts }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ListComptes }{@code >}
      * 
      * @param value
      *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link GetCompts }{@code >}
+     *     the new instance of {@link JAXBElement }{@code <}{@link ListComptes }{@code >}
      */
-    @XmlElementDecl(namespace = "http://ws.example.org/", name = "getCompts")
-    public JAXBElement<GetCompts> createGetCompts(GetCompts value) {
-        return new JAXBElement<>(_GetCompts_QNAME, GetCompts.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.example.org/", name = "listComptes")
+    public JAXBElement<ListComptes> createListComptes(ListComptes value) {
+        return new JAXBElement<>(_ListComptes_QNAME, ListComptes.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetComptsResponse }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ListComptesResponse }{@code >}
      * 
      * @param value
      *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link GetComptsResponse }{@code >}
+     *     the new instance of {@link JAXBElement }{@code <}{@link ListComptesResponse }{@code >}
      */
-    @XmlElementDecl(namespace = "http://ws.example.org/", name = "getComptsResponse")
-    public JAXBElement<GetComptsResponse> createGetComptsResponse(GetComptsResponse value) {
-        return new JAXBElement<>(_GetComptsResponse_QNAME, GetComptsResponse.class, null, value);
+    @XmlElementDecl(namespace = "http://ws.example.org/", name = "listComptesResponse")
+    public JAXBElement<ListComptesResponse> createListComptesResponse(ListComptesResponse value) {
+        return new JAXBElement<>(_ListComptesResponse_QNAME, ListComptesResponse.class, null, value);
     }
 
 }

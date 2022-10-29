@@ -7,12 +7,12 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour conversionEuroToDh complex type.
+ * <p>Classe Java pour Convert complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>{@code
- * <complexType name="conversionEuroToDh">
+ * <complexType name="Convert">
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
@@ -26,10 +26,10 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "conversionEuroToDh", propOrder = {
+@XmlType(name = "Convert", propOrder = {
     "montant"
 })
-public class ConversionEuroToDh {
+public class Convert {
 
     protected double montant;
 

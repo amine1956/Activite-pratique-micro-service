@@ -16,7 +16,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="arg0" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         <element name="code" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -27,26 +27,26 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "getCompt", propOrder = {
-    "arg0"
+    "code"
 })
 public class GetCompt {
 
-    protected int arg0;
+    protected int code;
 
     /**
-     * Obtient la valeur de la propriété arg0.
+     * Obtient la valeur de la propriété code.
      * 
      */
-    public int getArg0() {
-        return arg0;
+    public int getCode() {
+        return code;
     }
 
     /**
-     * Définit la valeur de la propriété arg0.
+     * Définit la valeur de la propriété code.
      * 
      */
-    public void setArg0(int value) {
-        this.arg0 = value;
+    public void setCode(int value) {
+        this.code = value;
     }
 
 }

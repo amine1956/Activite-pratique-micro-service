@@ -1,8 +1,10 @@
 
 package proxy;
 
+import javax.xml.datatype.XMLGregorianCalendar;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlSchemaType;
 import jakarta.xml.bind.annotation.XmlType;
 
 
@@ -18,6 +20,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *       <sequence>
  *         <element name="code" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         <element name="solde" type="{http://www.w3.org/2001/XMLSchema}double"/>
+ *         <element name="dateCreation" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -29,12 +32,15 @@ import jakarta.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "compt", propOrder = {
     "code",
-    "solde"
+    "solde",
+    "dateCreation"
 })
 public class Compt {
 
     protected int code;
     protected double solde;
+    @XmlSchemaType(name = "dateTime")
+    protected XMLGregorianCalendar dateCreation;
 
     /**
      * Obtient la valeur de la propriété code.
@@ -66,6 +72,30 @@ public class Compt {
      */
     public void setSolde(double value) {
         this.solde = value;
+    }
+
+    /**
+     * Obtient la valeur de la propriété dateCreation.
+     * 
+     * @return
+     *     possible object is
+     *     {@link XMLGregorianCalendar }
+     *     
+     */
+    public XMLGregorianCalendar getDateCreation() {
+        return dateCreation;
+    }
+
+    /**
+     * Définit la valeur de la propriété dateCreation.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link XMLGregorianCalendar }
+     *     
+     */
+    public void setDateCreation(XMLGregorianCalendar value) {
+        this.dateCreation = value;
     }
 
 }

@@ -8,16 +8,16 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Classe Java pour conversionEuroToDhResponse complex type.
+ * <p>Classe Java pour ConvertResponse complex type.
  * 
  * <p>Le fragment de schéma suivant indique le contenu attendu figurant dans cette classe.
  * 
  * <pre>{@code
- * <complexType name="conversionEuroToDhResponse">
+ * <complexType name="ConvertResponse">
  *   <complexContent>
  *     <restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       <sequence>
- *         <element name="return" type="{http://www.w3.org/2001/XMLSchema}double"/>
+ *         <element name="return" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/>
  *       </sequence>
  *     </restriction>
  *   </complexContent>
@@ -27,27 +27,35 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "conversionEuroToDhResponse", propOrder = {
+@XmlType(name = "ConvertResponse", propOrder = {
     "_return"
 })
-public class ConversionEuroToDhResponse {
+public class ConvertResponse {
 
     @XmlElement(name = "return")
-    protected double _return;
+    protected Double _return;
 
     /**
      * Obtient la valeur de la propriété return.
      * 
+     * @return
+     *     possible object is
+     *     {@link Double }
+     *     
      */
-    public double getReturn() {
+    public Double getReturn() {
         return _return;
     }
 
     /**
      * Définit la valeur de la propriété return.
      * 
+     * @param value
+     *     allowed object is
+     *     {@link Double }
+     *     
      */
-    public void setReturn(double value) {
+    public void setReturn(Double value) {
         this._return = value;
     }
 
