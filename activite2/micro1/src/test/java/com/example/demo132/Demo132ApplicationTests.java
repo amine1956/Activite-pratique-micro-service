@@ -1,10 +1,10 @@
-package com.example.micro2;
+package com.example.demo132;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Micro2ApplicationTests {
+class Demo132ApplicationTests {
 
     @Test
     void contextLoads() {
