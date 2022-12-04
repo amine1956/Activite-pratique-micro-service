@@ -1,0 +1,26 @@
+
+<div class="card">
+    <div class="card-container yellow-container">
+        <div class="block bg-blue-500 font-bold text-center p-4 border-round mb-3"><p-table [value]="customers" [tableStyle]="{'min-width': '50rem'}">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>email</th>
+                    <th>order</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-customer>
+                <tr>
+                    <td>{{customer.id}}</td>
+                    <td>{{customer.name}}</td>
+                    <td>{{customer.email}}</td>
+                    <td><button pButton type="button" label="oreder" (click)="getOrder(customer)"></button></td>
+        
+        
+        
+            </ng-template>
+        </p-table>
+        </div>
+    </div>
+</div>

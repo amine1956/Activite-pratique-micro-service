@@ -1,0 +1,34 @@
+
+<div class="card">
+    <div class="flex card-container indigo-container">
+        <div class="flex-1 h-4rem  text-white font-bold text-center p-4 border-round">  <p-card header="Customer" [style]="{'width': '25 rem', 'margin-bottom': '20em'}">
+          <h1 style="text-align:left">Id:       {{orderDetailes.customer.id}}</h1>
+          <br>
+          <h1 style="text-align:left">name:       {{orderDetailes.customer.name}}</h1>
+          <br>
+          <h1 style="text-align:left">email:       {{orderDetailes.customer.email}}</h1>
+          <br>
+          <br>
+        </p-card></div>
+        <div class="flex-1 h-4rem text-white font-bold text-center p-4 border-round mx-4">  <p-card header="Order" [style]="{'width': '25 rem', 'margin-bottom': '20em'}">
+            <p-table [value]="products" [tableStyle]="{'min-width': '50rem'}">
+                <ng-template pTemplate="header">
+                    <tr>
+                        <th>name</th>
+                        <th>price</th>
+                        <th>quantity</th>
+                        <th>discount</th>  
+                    </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-product>
+                    <tr>
+                        <td>{{product.product.name}}</td>
+                        <td>{{product.price}}</td>
+                        <td>{{product.quantity}}</td>
+                        <td>{{product.discount}}</td>
+                    </tr>
+                </ng-template>
+            </p-table>
+        </p-card></div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="card" >
+    <div class="card-container yellow-container">
+        <div class="block bg-blue-500 font-bold text-center p-4 border-round mb-3"><p-table [value]="orders" [tableStyle]="{'min-width': '50rem'}">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>createdAt</th>
+                    <th>status</th>
+                    <th>customerId</th>
+                    <th>OrderDetails</th>
+        
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-order>
+                <tr>
+                    <td>{{order.createdAt | date}}</td>
+                    <td [ngStyle]="{'color': order.status === 'PENDING' ? 'red' : 'green'}">{{order.status}}</td>
+                    <td>{{order.customerId}}</td>
+                    <td><button pButton type="button" label="orderDetails" (click)="getOrderDetails(order)"></button></td>
+                </tr>
+        
+        
+            </ng-template>
+        </p-table>
+        </div>
+    </div>
+</div>
