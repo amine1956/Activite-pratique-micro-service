@@ -29,14 +29,18 @@
   <tr>
    <td>3</td>
    <td> Activité Pratique N° 3 : Web services SOAP, WSDL, UDDI avec JAXWS	</td>
-   <td><a href="https://github.com/amine1956/Activite-pratique-micro-service/tree/main/activite3">🔗</a></td>
+   <td><a href="https://github.com/amine1956/Activite-pratique-micro-service/tree/main/activitee4>🔗</a></td>
  </tr>
   <tr>
-   <td>3</td>
-   <td> Activité Pratique N° 3 : Web services SOAP, WSDL, UDDI avec JAXWS	</td>
-   <td><a href="https://github.com/amine1956/Activite-pratique-micro-service/tree/main/activite4">🔗</a></td>
+   <td>4</td>
+   <td> Activité Pratique N° 4 : Architectures Micro services avec (Spring Cloud Config, Consul Discovery, Consul Config,Vault)</td>
+   <td><a href="https://github.com/amine1956/Activite-pratique-micro-service/tree/main/activitee4">🔗</a></td>
  </tr>
 <tr>
+   <td>4.1</td>
+   <td> Activité Pratique N° 4.1 : Sécurité des micro services avec Keycloak</td>
+   <td><a href="https://github.com/amine1956/Activite-pratique-micro-service/tree/main/activite4_1">🔗</a></td>
+ </tr>
 
 </table>
 
